@@ -3675,7 +3675,7 @@ form .subFormSectionTitle {
 .fileUploadLabel i {
     position: relative;
     left: -12px;
-    border-radius: 5px 0 0 5px;
+    border-radius:0 0 0 0;
     padding: 8px 35px;
     font-size: 18px;
     color: #FFF;
@@ -4623,19 +4623,7 @@ In this case we don't need it as there are max 4 tabs */
     display: inline-block;
     z-index: 170;
     position: absolute;
-    right: -12px;
-    top: 50%;
-    transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-}
-.form-error-blck4 {
-    display: inline-block;
-    z-index: 170;
-    position: absolute;
-    left: -12px;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
     -moz-transform: translateY(-50%);

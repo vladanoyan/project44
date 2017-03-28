@@ -180,11 +180,12 @@ body
 }
 .navbar-inverse
 {
-    background-color: #fff;
+    background-color:rgba(255, 255, 255, 0.9);
     border-radius: 0;
     position: fixed;
     z-index:111;
     width:100%;
+    box-shadow: 0 1px 16px 0 rgba(0,0,0,0.25);
 
 }
 .navbar-nav>li>.dropdown-menu
@@ -196,7 +197,7 @@ body
     color: #fff;
     background-color: rgba(140, 136, 136, 0.83);
 }
-.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li:hover
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li:hover, .navbar-nav>li.active a
 {
     color: #fff;
     background-image: -moz-linear-gradient( 90deg, rgb(61,120,51) 0%, rgb(90,183,44) 100%);
@@ -216,6 +217,8 @@ body
 {
     width:100%;
     height:65px!important;
+    background-image: url("../images/background-top.png");
+    border-bottom: 1px solid #e2e2e2;
 }
 #logo-a:hover,#logo-a:focus,#logo-a:active,
 #logo-a>a:hover,#logo-a>a:focus,#logo-a>a:active
@@ -327,6 +330,9 @@ body
     z-index:9;
     padding:0;
     overflow: hidden;
+}
+.header>.container{
+    display: flex;
 }
 .header-pic {
     position: relative;
@@ -484,7 +490,11 @@ a:hover, a:focus {
      display: inline-flex;
      align-items: center;
      justify-content: center;
+     transition: all 0.7s;
  }
+.picturedNavbar .picturedNavbarItem a:hover {
+    margin-top: -20px;
+}
 @media (max-width: 768px) {
     .picturedNavbar  {
         margin-bottom: 50px
@@ -536,7 +546,7 @@ a:hover, a:focus {
 .pics
 {
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
   background-color: #438432;
 }
@@ -554,13 +564,13 @@ a:hover, a:focus {
     background-image: -ms-linear-gradient( 90deg, rgb(61,120,51) 0%, rgb(90,183,44) 100%);
     margin-top: 44px;
     padding: 5px 16px;
-    border-radius: 10px
+    border-radius: 10px;
+    transition: all 0.5s;
   }
 .Toutes_nos_annonces__:hover
 {
-text-decoration: underline;
-color: inherit;
-text-shadow: -3px 0 9px rgb(38, 38, 38);
+    color: #FFF;;
+    opacity:0.8;
 }
 .slidericons
 {
@@ -614,6 +624,7 @@ clear: both;
 
 .Background {
 background-color: #599846;
+    padding:10px 0;
 }
 .Les_Angles_735_000_€_FAI_1_ {
     font-size: 18px;
@@ -623,6 +634,7 @@ background-color: #599846;
     -webkit-transform: matrix(0.92103075644223, 0, 0, 0.92110874200426, 0, 0);
     -ms-transform: matrix(0.92103075644223, 0, 0, 0.92110874200426, 0, 0);
     text-transform: uppercase;
+    margin:0;
 }
 
 .item{
@@ -648,18 +660,29 @@ background-color: #599846;
   font-weight: bold;
   border: 1px solid #d5d5d5;
   color: #373737;
+
 }
 
 .ourSecondCarousel .owl-nav .owl-next
 {
-  right: -40px;
-  bottom: 149px;
+    right: -40px;
+    bottom: 174px;
+    font-size: 35px;
+    border: none;
+    background: none;
+    font-weight: 700;
+    color: #438432;
 }
 
 .ourSecondCarousel .owl-nav .owl-prev
 {
-  left: -40px;
-  bottom: 149px;
+    left: -40px;
+    bottom: 174px;
+    font-size: 35px;
+    border: none;
+    background: none;
+    font-weight: 700;
+    color: #438432;
 }
 
 .Bonne
@@ -693,16 +716,18 @@ background-color: #599846;
 body>footer.footer-m2 {
   padding: 0;
 }
-.footer-m2 p {
+.footer-m2 p,a {
   margin: 0;
   padding: 0;
     color: #fff;
 }
+
 /*--- Footer General Styles End ---*/
 
 /*--- Footer Top Links Start ---*/
 #footer
 {
+  margin-top: 10px;
   background-color: #000000;
   width: 100%;
   height: auto;
@@ -974,7 +999,7 @@ margin-bottom: 17px;
 .Coups1
 {
     max-width: 603px !important;
-    padding: 16px 1px !important;
+    padding: 10px 1px !important;
 }
 .Coups2
 {
@@ -2694,12 +2719,12 @@ color: #55ac2e;
 {
     width: 47%;
     height: 35px;
-    border-radius: 5px !important;
+    border-radius: 0 !important;
     display: inline-block;
     padding: 6px 12px;
     margin: 6px;
     margin-top: 14px;
-     border:1px solid #4c9730;
+     border:1px solid #c5c3c3;
 
 }
 .myform-control2:focus
@@ -2711,12 +2736,12 @@ color: #55ac2e;
 {
     width: 100%;
     height: 90px;
-    border-radius: 5px!important;
+    border-radius: 0!important;
     display: inline-block;
     padding: 6px 12px;
     margin-top: 14px;
     resize: none;
-    border:1px solid #4c9730;
+    border:1px solid #c5c3c3;
 }
 .form-control2-2:focus
 {
@@ -3532,6 +3557,11 @@ text-align: -webkit-center;
     width: 100%;
     padding-bottom: 30px;
 }
+.radio
+{
+    display: inline-block;
+    margin-right: 20px;
+}
 form>section {
     width: 100%;
     text-align: center;
@@ -3569,6 +3599,18 @@ form .subFormSectionTitle {
     background: #ebebeb;
     color: #939393;
     padding: 12px;
+    border-bottom: 1px solid;
+}
+.des-biens
+{
+    width: 50%;
+    float: left;
+}
+@media  (max-width:550px) {
+    .des-biens{
+        width:100%;
+        clear: both;
+    }
 }
 .formSectionTitleArea .sectionTitle {
     margin: 0;
@@ -3588,6 +3630,7 @@ form .subFormSectionTitle {
 .formSectionSubTitleArea .sectionSubTitle {
     color: #939393;
     border-bottom: 1px solid #489130;
+    padding-bottom: 10px;
 }
 .formSectionSubTitleArea .subSectionSubTitle {
     color: #fff;
@@ -3633,7 +3676,7 @@ form .subFormSectionTitle {
     position: relative;
     left: -12px;
     border-radius: 5px 0 0 5px;
-    padding: 8px 40px;
+    padding: 8px 35px;
     font-size: 18px;
     color: #FFF;
     background-image: -moz-linear-gradient( 90deg, rgb(61,120,51) 0%, rgb(90,183,44) 100%);
@@ -3649,7 +3692,7 @@ form .subFormSectionTitle {
     font-size: 20px;
     color: rgb(80, 80, 80);;
     border-radius: 0 0 0 0;
-    height: 34px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3659,7 +3702,7 @@ form .formButtonArea {
     float: left;
     text-align: center;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 40px;
 }
 form .subFormButtonArea .button {
     margin-left: auto;
@@ -3674,19 +3717,24 @@ form textarea {
     }
 }
 .shadow-border
-{ 
-    float: right;
-    width: 100%;
-    padding-top: 0;
+{
+    width: 74%;
+    padding-top: 30px;
     padding-bottom: 30px;
     min-height: 220px;
+    margin: 0 auto;
+    clear: both;
 }
 .shadow-border1
 {
-    width: 100%;
+    width: 74%;
     padding-top: 30px;
     min-height: 267px;
+    margin: 0 auto;
+    float: none;
+    clear: both;
 }
+
 /* /forms */
 
 /*page5 CSS Estimation */
@@ -3752,9 +3800,10 @@ form textarea {
 }
 .form-control
 {
-    border-radius: 5px;
+    border-radius: 0px;
     resize: none;
-    border-color:#ebebeb;
+    border-color:#c5c3c3;
+    height:35px;
 }
 
 /*page7 CSS CONTACT*/
@@ -3769,7 +3818,7 @@ form textarea {
     background-image: -webkit-linear-gradient( 90deg, rgb(61,120,51) 0%, rgb(90,183,44) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(61,120,51) 0%, rgb(90,183,44) 100%);
     box-shadow: inset 0 0 1px 0 rgba(255, 255, 255, 0.75);
-    width:24%;
+    width:240px;
     height: 40px;
     font-size: 14px;
     font-family: "Open Sans";
@@ -3836,10 +3885,6 @@ form textarea {
     margin-bottom: 45px;
 }
 
-.error
-{
-    padding: 2px 0;
-}
 
 
 /********************** Popup Contact Model2 Starts **********************************/
@@ -3991,35 +4036,89 @@ form textarea {
 
 
 /*modal CSS*/
+.batserachModal
+{
+    background-image: -moz-linear-gradient( 90deg, rgb(61,120,51) 0%, rgb(90,183,44) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(61,120,51) 0%, rgb(90,183,44) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(61,120,51) 0%, rgb(90,183,44) 100%);
+    box-shadow: inset 0 0 1px 0 rgba(255, 255, 255, 0.75);
+    width: 55%;
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: #ffffff;
+    border: none;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    border-radius: 20px !important;
+    padding: 10px!important;
+
+}
+.finish{
+    float: none !important;
+}
 .modal-header
 {
     padding: 0;
+    background-image: url(../images/listing-img3.jpg);
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.modalHeight>.form-col-wrapper>.form-group>.form-input-col1>input,
+.modalHeight>.form-col-wrapper>.form-group>.form-input-col1>select,
+.modalHeight>.form-col-wrapper>.form-group>.form-input-col2>input,
+.modalHeight>.form-col-wrapper>.form-group>.form-input-col3>input
+{
+    height:50px!important;
+    background-color: #f5f5f5!important;
+    box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.35);
+}
+.text-area-modal
+{
+    background-color: #f5f5f5!important;
+    height:130px!important;
+    margin-bottom: 10px;
+    box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.35);
+
+}
+.form-input-col3
+{
+    width: 100% !important;
+}
+.modal-body
+{
+    padding:0;
 }
 .modalimage
 {
-
     width:100%;
 }
 .modalLog
 {
-    padding:15px;
-    position: absolute;
-    z-index: 999;
-    top: 0;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%,-50%);
-    width: 34%;
+    width: 61%;
+    margin: 0 auto;
 
 }
-
-.modal-hover
+.modal-log-box
 {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 80px;
+    width:100%;
     position: absolute;
     bottom: 0;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+
+.modal-Parce
+{
+    margin-bottom: 24px;
+    margin-top: 20px;
+}
+.modal-Parce>p
+{
+    line-height: 17px;
+    font-size: 13px;
 }
 
 .modal-dialog
@@ -4031,16 +4130,18 @@ form textarea {
 }
 .modal-header-lst
 {
-    color: #fff;
-    column-count: 3;
+    color: #505050;
     width: 100%;
-    padding: 19px 6px;
     font-size: 15px;
+    margin-top: 70px;
+    margin-bottom: 30px;
 }
+
 .modal-header-lst  li
 {
     display: inline-block;
     text-align: justify;
+    line-height: 24px;
 }
 
 .modal-content
@@ -4050,22 +4151,37 @@ form textarea {
     border:none;
 
 }
+.modal-content>.col-md-5
+{
+    padding:0;
+}
+.modal-right-content
+{
+    padding:0;
+}
 .close
 {
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 47px;
-    color: #fff !important;
+    font-size:35px;
+    color: #4a9530 !important;
     opacity: 1 !important;
     font-weight: 300;
     z-index:999;
+}
+@media screen and (min-width:770px) {
+    .popup
+    {
+        width: 83.333333%;
+
+    }
 }
 @media screen and (max-width:1030px) {
     .modal-header-lst
     {
         column-count: 2;
-        padding-top: 10px;
+        padding-top: 30px;
 
     }
 }
@@ -4197,7 +4313,7 @@ In this case we don't need it as there are max 4 tabs */
 }
 .wizard
 {
-    padding:27px;
+
 }
 .form-wizard-m1 .pager li>a.border-rect,
 .pager li>span.border-rect {
@@ -4326,8 +4442,7 @@ In this case we don't need it as there are max 4 tabs */
     padding-right: 0;
 }
 .form-input-group-m1 .form-input-addon label{
-    width: 100%;
-    padding: 0 12px;
+    width: 100%!important;
     text-align: left;
     color: #333;
     background-color: transparent;
@@ -4336,10 +4451,15 @@ In this case we don't need it as there are max 4 tabs */
     -ms-border-radius: 25px 0 0 25px;
 
 }
+.form-input-addon
+{
+    width: 100% ;
+}
 /*override*/
 .form-xlg .form-input-group-m1 .form-input-addon label {
     height: auto;
 }
+
 
 /* Cols for Double Input Forms without Addons Start */
 .form-input-group-m1 div.form-input-col1 .form-control,
@@ -4387,12 +4507,7 @@ In this case we don't need it as there are max 4 tabs */
 
 /*--------------------  Form Input Group Model1 Media Query Starts ----------*/
 @media (min-width: 768px) {
-    .form-input-group-m1 .form-input-addon label {
-        padding: 12px;
-        color: #FFFFFF;
-        background-color: #a3a3a3;
-        border: 1px solid #a3a3a3;
-    }
+
     /*override*/
     .form-xlg .form-input-group-m1 .form-input-addon label {
         height: 50px;

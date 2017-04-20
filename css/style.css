@@ -390,6 +390,12 @@ position: absolute;
         padding:150px 0 50px;
     }
 }
+@media (max-width: 470px) {
+   .listing-m3 .listing-item-parameters ul li{
+        display: block;
+        width: 100% !important;
+    }
+}
 @media screen and (max-width:660px) {
 
 
@@ -438,7 +444,7 @@ position: absolute;
     transition: all 0.6s;
     font-family: 'Pinyon Script';
     font-weight: 700;
-    font-size: 40px;
+    font-size: 37px;
     text-shadow:
             -1px -1px 0 #000,
             1px -1px 0 #000,
@@ -471,7 +477,7 @@ position: absolute;
 
 
 }
-@media (max-width: 440px) {
+@media (max-width: 1010px) {
     .picturedNavbar .picturedNavbarItem .title
     {
         font-size: 32px;
@@ -507,7 +513,7 @@ a:hover, a:focus {
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
     transition: all 0.6s;
      border: 15px solid #50a12f;
-     border-radius: 229px;
+     border-radius:50%;
 }
  .picturedNavbar .picturedNavbarItem:hover img {
     -webkit-box-shadow: 0 0 30px 0 rgba(0,0,0,0.9);
@@ -538,11 +544,7 @@ a:hover, a:focus {
         font-size: 17px;
     }
 }
-@media (max-width: 1080px) {
-    .Coups_de_Coeur {
-        font-size: 17px;
-    }
-}
+
 .pics
 {
   position: relative;
@@ -582,6 +584,7 @@ a:hover, a:focus {
     font-size: 13px;
     line-height: 13px;
     margin-top: 18px;
+    text-align: left;
 }
 
 .table td, .table tr {
@@ -708,8 +711,12 @@ background-color: #599846;
 
 .slider-row
 {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding: 0 40px;
+}
+@media (min-width: 768px) {
+    .slider-row {
+        padding: 0 80px;
+    }
 }
 /*-------------------- Footer Model2 Content Starts -------------------*/
 /*--- Footer General Styles Start ---*/
@@ -736,6 +743,7 @@ body>footer.footer-m2 {
   padding-right: 0;
   min-width: 300px;
   vertical-align: top;
+  float: right;
 }
 .footer-m2 .footer-top-links ul {
   display: inline-block;
@@ -846,6 +854,9 @@ body>footer.footer-m2 {
 }
 .footer-m2 .footer-top-links-bg {
   background-color: transparent;
+      margin:0;
+
+
 }
 .footer-m2 .footer-contacts-partners-bg,
 .footer-m2 .footer-btm-links-bg,
@@ -1011,6 +1022,9 @@ margin-bottom: 17px;
     margin-bottom: 30px;
 
 }
+.inform-Augustin>.container{
+    padding: 0;
+}
 .lagency-footer>li>a
 {
   color:black;
@@ -1028,6 +1042,22 @@ margin-bottom: 17px;
 .formcontainer
 {
     padding:35px;
+}
+@media screen and (max-width:460px) {
+    .formcontainer
+    {   
+     padding: 0;
+
+    }
+    #listing-sort
+    {
+        padding: 15px!important;
+    }
+    .listing-sort-m1 .lst-sort-block select
+    {
+        width: 97%!important;
+    }
+    
 }
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover
 {
@@ -1685,7 +1715,7 @@ margin-bottom: 17px;
     border:none;
     margin-top: 8px;
     vertical-align: top;
-    margin-left: 28px;
+    
 }
 .buttonCall2:hover{
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
@@ -1806,7 +1836,7 @@ margin-bottom: 17px;
 
 }
 
-.listing-m3 .listing-item-parameters {
+.listing-m3 .listing-item-parameters>ul{
     vertical-align: top;
     background-color: rgba(205, 205, 205, 0.69);
     max-height: 126px;
@@ -1919,6 +1949,11 @@ margin-bottom: 17px;
         margin-left: 0;
     }
 }
+#agency>.section-bg>.col-sm-12{
+  padding:0;
+  margin:0;
+}
+
 /*-------------------- Listing Model3 Media Queries End -------------*/
 /********************** Listing Model3 Ends  *****************************************/
 /*-----------------------------------------------------------------------------------*/
@@ -1943,6 +1978,7 @@ margin-bottom: 17px;
 .locationicon img
 {
     vertical-align: -webkit-baseline-middle;
+    vertical-align: -moz-middle-with-baseline;
 }
 .locationicon:hover
 {
@@ -1967,7 +2003,7 @@ margin-bottom: 17px;
   height: 34px;
   width: 37px;
   text-decoration: none;
-  padding: 7px 12px;
+  padding: 7px 10px;
 }
 .pagination>li:first-child,
 .pagination>li:first-child>a,
@@ -2055,6 +2091,11 @@ margin-bottom: 0;
     font-size: 26px;
     font-family: "Open Sans Light";
     display: inline-block;
+}
+@media (max-width: 440px) {
+  .header-vente>p{
+    font-size: 19px;
+  }
 }
 .fa-arrows-alt
 {
@@ -2510,6 +2551,21 @@ color: #55ac2e;
     font-size: 2.15em;
       margin-top: 0;
   }
+  @media (max-width: 400px) {
+  
+.listing-details-m1 .lst-itm-dtl-header h3
+
+  {
+    font-size: 18px;
+  }
+  #listing-details,
+  .page8,
+  #agency{
+    padding: 0;
+  }
+
+}
+
   /* Listing Details Header Ends */
   
   /* Listing Details Description */
@@ -2789,6 +2845,23 @@ color: #55ac2e;
     }
 
 }
+
+@media (min-width: 1200px) {
+    .textAreaFiche {
+        padding: 0 21px 10px 27px;
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .textAreaFiche {
+        padding: 0 21px 10px 23px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .textAreaFiche {
+        padding: 0 15px 10px 14px;
+    }
+}
+
 /*-------------------- Library of Custom Cols Starts ----------*/
 /* Custom Col for Mobile >=480px and <768px */
 .col-c-xs-12 {
@@ -2810,7 +2883,7 @@ color: #55ac2e;
     width: 58.33333333%;
 }
 .col-c-xs-6 {
-    width: 50%;
+    width: 49%;
 }
 .col-c-xs-5 {
     width: 41.66666667%;
@@ -3232,6 +3305,60 @@ text-align: -webkit-center;
 /********************** DPE GES Block Model3 Ends  ******************************/
 /*------------------------------------------------------------------------------*/
 
+/*-------------------- DPE GES Block Model1 Version1 Colors End -------------*/
+
+
+ .dpe-block-cover.no-selected,
+ .dpe-block-cover.inprogress,
+ .ges-block-cover.no-selected,
+ .ges-block-cover.inprogress,
+ .dpe-block-cover.no-selected,
+ .dpe-block-cover.inprogress,
+ .ges-block-cover.no-selected,
+ .ges-block-cover.inprogress
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+}
+.dpe-ges-block-m1-v1 div.no-selected {
+    background: url("../images/no-dpe.png") no-repeat center rgba(245,245,245, 0.5);
+}
+.dpe-ges-block-m1-v1 div.inprogress {
+    background: url("../images/no-ges.png") no-repeat center rgba(245,245,245, 0.5);
+}
+.dpe-ges-block-m1-v1 div.no-selected {
+    background: url("../images/dpe-inprogress.png") no-repeat center rgba(245,245,245, 0.5);
+}
+.dpe-ges-block-m1-v1 div.inprogress {
+    background: url("../images/ges-inprogress.png") enter rgba(245,245,245, 0.5);
+}
+
+
+
+.dpe-ges-block-m3 .dpe-blck .hover-content div.no-selected {
+    background: url("../images/no-dpe.png") no-repeat center rgba(245,245,245, 0.5);
+}
+.dpe-ges-block-m3 .dpe-blck .hover-content div.inprogress {
+    background: url("../images/dpe-inprogress.png") no-repeat center rgba(245,245,245, 0.5);
+}
+.dpe-ges-block-m3 .ges-blck .hover-content div.no-selected {
+    background: url("../images/no-ges.png") no-repeat center rgba(245,245,245, 0.5);
+}
+.dpe-ges-block-m3 .ges-blck .hover-content div.inprogress {
+    background: url("../images/ges-inprogress.png") no-repeat center rgba(245,245,245, 0.5);
+}
+
+.dpe-ges-block-m1-v2 .ges-block .dpe-block-cover div.inprogress {
+    background: url("../images/ges-inprogress.png") no-repeat center rgba(245,245,245, 0.5);
+}
+
+.dpe-ges-block-m1-v2 .dpe-block .dpe-block-cover.inprogress {
+    background: url("../images/dpe-inprogress.png") no-repeat center rgba(245,245,245, 0.5);
+}
+
+
 /********************** DPE GES Block Model1 Version1 Ends  *******************************/
 /*----------------------------------------------------------------------------------------*/
 
@@ -3381,6 +3508,7 @@ text-align: -webkit-center;
     z-index: 520;
     /*opacity: 0;*/
     width: 190px;
+    overflow: hidden;
 }
 .dpe-ges-block-m1-v1 .hover-content.pos-obs-right {
     top: 100%;
@@ -3599,7 +3727,7 @@ form .subFormSectionTitle {
     background: #ebebeb;
     color: #939393;
     padding: 12px;
-    border-bottom: 1px solid;
+    border: 1px solid;
 }
 .des-biens
 {
@@ -3611,7 +3739,16 @@ form .subFormSectionTitle {
         width:100%;
         clear: both;
     }
+    .sectionTitle{
+        font-size: 17px;
+    }
+   
 }
+@media  (max-width:800px) {
+     .formArea>form>.col-xs-12{
+        padding: 0;
+    }
+    }
 .formSectionTitleArea .sectionTitle {
     margin: 0;
     text-transform: uppercase;
@@ -3715,7 +3852,12 @@ form textarea {
     form .subFormButtonArea .button {
         margin-bottom: 20px;
     }
+    .shadow-border,
+    .shadow-border1{
+        width: 100% !important;
+    }
 }
+
 .shadow-border
 {
     width: 74%;
@@ -3933,6 +4075,14 @@ form textarea {
 .popup-contact-m2 .modal-header .close {
     margin: -3px 0 0 0;
     z-index: 2;
+}
+.modal
+{
+    z-index: 999999;
+}
+.modal-hover>ul>.col-c-xs-6
+{
+  width: 50%;
 }
 /*--- Modal General Styles End ---*/
 
